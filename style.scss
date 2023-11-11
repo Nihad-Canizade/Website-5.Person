@@ -491,34 +491,47 @@ $MontsFont: 'Montserrat', sans-serif;
                 border: none;
                 border-radius: 5px;
 
-                &:hover{
+                &:hover {
                     background-color: linen;
                     transition: .1s;
                 }
             }
 
-            .box1, .box2, .box3 {
-                .box1-in, .box2-in, .box3-in {
+            .box1,
+            .box2,
+            .box3 {
+
+                .box1-in,
+                .box2-in,
+                .box3-in {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     margin-top: 2rem;
                     position: relative;
 
-                    img{
+                    img {
                         position: absolute;
                         left: 1rem;
                     }
-                    
-                    .box1-text, .box2-text, .box3-text{
+
+                    .box1-text,
+                    .box2-text,
+                    .box3-text {
                         margin-left: -3rem;
-                        .box1-p1, .box2-p1, .box3-p1{
+
+                        .box1-p1,
+                        .box2-p1,
+                        .box3-p1 {
                             color: $textColor;
                             margin-top: 5px;
                         }
                     }
                 }
-                .box1-p2, .box2-p2, .box3-p2{
+
+                .box1-p2,
+                .box2-p2,
+                .box3-p2 {
                     margin-top: 2.5rem;
                     margin-left: 5%;
                     margin-right: 5%;
@@ -527,13 +540,18 @@ $MontsFont: 'Montserrat', sans-serif;
                 }
             }
         }
-        .cricles{
+
+        .cricles {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 10px;
             margin-top: 3rem;
-            .cricle1, .cricle2, .cricle3, .cricle4{
+
+            .cricle1,
+            .cricle2,
+            .cricle3,
+            .cricle4 {
                 width: 10px;
                 height: 10px;
                 border-radius: 9999px;
@@ -544,6 +562,279 @@ $MontsFont: 'Montserrat', sans-serif;
     }
 }
 
+// Section 6
+.section6 {
+    width: 100%;
+    padding: 0 100px;
+
+    .sec6-head {
+        text-align: center;
+        margin-top: 5rem;
+
+        h1 {
+            font-size: 45px;
+            margin-top: 1rem;
+        }
+    }
+
+    // Center Navbar
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 20px;
+
+        ul {
+            li {
+                list-style: none;
+                display: inline-block;
+                padding: 10px 20px;
+
+                .a2 {
+                    color: $textColor;
+                    text-decoration: none;
+
+                    &::after {
+                        content: "";
+                        width: 0;
+                        height: 2.5px;
+                        background-color: $orgColor;
+                        margin: auto;
+                        margin-top: 5px;
+                        display: block;
+                    }
+
+                    &:hover::after {
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+
+    // Grid
+    .boxs {
+        display: grid;
+        grid-template-rows: 350px 350px 350px;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+        margin-top: 1rem;
+
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6,
+        .box7,
+        .box8 {
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                background-color: rgba(5, 5, 5, 0.5);
+                height: 100%;
+                width: 0;
+                transition: .3s;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+
+        .box1 {
+            background-image: url(https://credesign.vercel.app/multiPage/img/portfolioOne.png);
+        }
+
+        .box2 {
+            background-image: url(https://credesign.vercel.app/multiPage/img/portfolioTwo.png);
+        }
+
+        .box3 {
+            background-image: url(https://credesign.vercel.app/multiPage/img/portfolioThree.png);
+        }
+
+        .box4 {
+            background-image: url(https://credesign.vercel.app/multiPage/img/portfolioFour.png);
+        }
+
+        .box5 {
+            background-image: url(https://credesign.vercel.app/multiPage/img/portfolioFive.png);
+        }
+
+        .box6 {
+            background-image: url(https://credesign.vercel.app/multiPage/img/portfolioSix.png);
+        }
+
+        .box7 {
+            background-image: url(https://credesign.vercel.app/multiPage/img/portfolioSeven.png);
+        }
+
+        .box8 {
+            background-image: url(https://credesign.vercel.app/multiPage/img/portfolioEight.png);
+            grid-row: 3/4;
+            grid-column: 2/4;
+        }
+    }
+}
+
+// Section 7
+.section7 {
+    width: 100%;
+    padding: 0 100px;
+
+    .sec7-head {
+        text-align: center;
+        margin-top: 5rem;
+
+        h1 {
+            font-size: 45px;
+            margin-top: 1rem;
+        }
+    }
+
+    // Boxs
+    .boxs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3rem;
+
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6 {
+            width: 15%;
+            height: 150px;
+            border: 1px solid rgb(255, 221, 158);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 60%;
+                height: 60%;
+
+                &:hover {
+                    transform: scale(1.2);
+                    transition: 1s;
+                }
+            }
+        }
+    }
+
+    // Oval
+    .ovals {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 3rem;
+
+        .oval1,
+        .oval2,
+        .oval3,
+        .oval4,
+        .oval5,
+        .oval6,
+        .oval7 {
+            width: 20px;
+            height: 3.5px;
+            background-color: rgb(225, 225, 225);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+// Section 8
+.section8 {
+    width: 100%;
+    padding: 0 100px;
+
+    .sec8-head {
+        text-align: center;
+        margin-top: 5rem;
+
+        h1 {
+            font-size: 45px;
+            margin-top: 1rem;
+        }
+    }
+
+    // Cards 
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3rem;
+
+        .card1,
+        .card2,
+        .card3 {
+            width: 32%;
+            height: 450px;
+            border: 1px solid rgb(255, 218, 149);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            img{
+                position: relative;
+                
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background-color: rgba(5, 5, 5, 0.5);
+                    height: 100%;
+                    width: 0;
+                    transition: .3s;
+                }
+    
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+
+            p {
+                margin-top: 2rem;
+                color: $textColor;
+            }
+
+            h1 {
+                margin-top: 2rem;
+
+                &:hover{
+                    cursor: pointer;
+                    color: $orgColor;
+                    transition: .3s;
+                }
+            }
+
+            span, i{
+                color: $orgColor;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            i {
+                margin-left: 5px;
+            }
+        }
+    }
+}
 
 
 

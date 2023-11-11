@@ -403,6 +403,80 @@
   margin-top: 1rem;
 }
 
+.section5 {
+  width: 100%;
+  padding: 0 100px;
+}
+.section5 .sec5-head {
+  text-align: center;
+  margin-top: 5rem;
+}
+.section5 .sec5-head h1 {
+  font-size: 45px;
+  margin-top: 1rem;
+}
+.section5 .sec5-in .boxs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-top: 3rem;
+}
+.section5 .sec5-in .boxs .box1,
+.section5 .sec5-in .boxs .box2,
+.section5 .sec5-in .boxs .box3 {
+  width: 30%;
+  height: 250px;
+  background-color: rgb(251, 247, 243);
+  border: none;
+  border-radius: 5px;
+}
+.section5 .sec5-in .boxs .box1:hover,
+.section5 .sec5-in .boxs .box2:hover,
+.section5 .sec5-in .boxs .box3:hover {
+  background-color: linen;
+  transition: 0.1s;
+}
+.section5 .sec5-in .boxs .box1 .box1-in, .section5 .sec5-in .boxs .box1 .box2-in, .section5 .sec5-in .boxs .box1 .box3-in, .section5 .sec5-in .boxs .box2 .box1-in, .section5 .sec5-in .boxs .box2 .box2-in, .section5 .sec5-in .boxs .box2 .box3-in, .section5 .sec5-in .boxs .box3 .box1-in, .section5 .sec5-in .boxs .box3 .box2-in, .section5 .sec5-in .boxs .box3 .box3-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  position: relative;
+}
+.section5 .sec5-in .boxs .box1 .box1-in img, .section5 .sec5-in .boxs .box1 .box2-in img, .section5 .sec5-in .boxs .box1 .box3-in img, .section5 .sec5-in .boxs .box2 .box1-in img, .section5 .sec5-in .boxs .box2 .box2-in img, .section5 .sec5-in .boxs .box2 .box3-in img, .section5 .sec5-in .boxs .box3 .box1-in img, .section5 .sec5-in .boxs .box3 .box2-in img, .section5 .sec5-in .boxs .box3 .box3-in img {
+  position: absolute;
+  left: 1rem;
+}
+.section5 .sec5-in .boxs .box1 .box1-in .box1-text, .section5 .sec5-in .boxs .box1 .box1-in .box2-text, .section5 .sec5-in .boxs .box1 .box1-in .box3-text, .section5 .sec5-in .boxs .box1 .box2-in .box1-text, .section5 .sec5-in .boxs .box1 .box2-in .box2-text, .section5 .sec5-in .boxs .box1 .box2-in .box3-text, .section5 .sec5-in .boxs .box1 .box3-in .box1-text, .section5 .sec5-in .boxs .box1 .box3-in .box2-text, .section5 .sec5-in .boxs .box1 .box3-in .box3-text, .section5 .sec5-in .boxs .box2 .box1-in .box1-text, .section5 .sec5-in .boxs .box2 .box1-in .box2-text, .section5 .sec5-in .boxs .box2 .box1-in .box3-text, .section5 .sec5-in .boxs .box2 .box2-in .box1-text, .section5 .sec5-in .boxs .box2 .box2-in .box2-text, .section5 .sec5-in .boxs .box2 .box2-in .box3-text, .section5 .sec5-in .boxs .box2 .box3-in .box1-text, .section5 .sec5-in .boxs .box2 .box3-in .box2-text, .section5 .sec5-in .boxs .box2 .box3-in .box3-text, .section5 .sec5-in .boxs .box3 .box1-in .box1-text, .section5 .sec5-in .boxs .box3 .box1-in .box2-text, .section5 .sec5-in .boxs .box3 .box1-in .box3-text, .section5 .sec5-in .boxs .box3 .box2-in .box1-text, .section5 .sec5-in .boxs .box3 .box2-in .box2-text, .section5 .sec5-in .boxs .box3 .box2-in .box3-text, .section5 .sec5-in .boxs .box3 .box3-in .box1-text, .section5 .sec5-in .boxs .box3 .box3-in .box2-text, .section5 .sec5-in .boxs .box3 .box3-in .box3-text {
+  margin-left: -3rem;
+}
+.section5 .sec5-in .boxs .box1 .box1-in .box1-text .box1-p1, .section5 .sec5-in .boxs .box1 .box1-in .box1-text .box2-p1, .section5 .sec5-in .boxs .box1 .box1-in .box1-text .box3-p1, .section5 .sec5-in .boxs .box1 .box1-in .box2-text .box1-p1, .section5 .sec5-in .boxs .box1 .box1-in .box2-text .box2-p1, .section5 .sec5-in .boxs .box1 .box1-in .box2-text .box3-p1, .section5 .sec5-in .boxs .box1 .box1-in .box3-text .box1-p1, .section5 .sec5-in .boxs .box1 .box1-in .box3-text .box2-p1, .section5 .sec5-in .boxs .box1 .box1-in .box3-text .box3-p1, .section5 .sec5-in .boxs .box1 .box2-in .box1-text .box1-p1, .section5 .sec5-in .boxs .box1 .box2-in .box1-text .box2-p1, .section5 .sec5-in .boxs .box1 .box2-in .box1-text .box3-p1, .section5 .sec5-in .boxs .box1 .box2-in .box2-text .box1-p1, .section5 .sec5-in .boxs .box1 .box2-in .box2-text .box2-p1, .section5 .sec5-in .boxs .box1 .box2-in .box2-text .box3-p1, .section5 .sec5-in .boxs .box1 .box2-in .box3-text .box1-p1, .section5 .sec5-in .boxs .box1 .box2-in .box3-text .box2-p1, .section5 .sec5-in .boxs .box1 .box2-in .box3-text .box3-p1, .section5 .sec5-in .boxs .box1 .box3-in .box1-text .box1-p1, .section5 .sec5-in .boxs .box1 .box3-in .box1-text .box2-p1, .section5 .sec5-in .boxs .box1 .box3-in .box1-text .box3-p1, .section5 .sec5-in .boxs .box1 .box3-in .box2-text .box1-p1, .section5 .sec5-in .boxs .box1 .box3-in .box2-text .box2-p1, .section5 .sec5-in .boxs .box1 .box3-in .box2-text .box3-p1, .section5 .sec5-in .boxs .box1 .box3-in .box3-text .box1-p1, .section5 .sec5-in .boxs .box1 .box3-in .box3-text .box2-p1, .section5 .sec5-in .boxs .box1 .box3-in .box3-text .box3-p1, .section5 .sec5-in .boxs .box2 .box1-in .box1-text .box1-p1, .section5 .sec5-in .boxs .box2 .box1-in .box1-text .box2-p1, .section5 .sec5-in .boxs .box2 .box1-in .box1-text .box3-p1, .section5 .sec5-in .boxs .box2 .box1-in .box2-text .box1-p1, .section5 .sec5-in .boxs .box2 .box1-in .box2-text .box2-p1, .section5 .sec5-in .boxs .box2 .box1-in .box2-text .box3-p1, .section5 .sec5-in .boxs .box2 .box1-in .box3-text .box1-p1, .section5 .sec5-in .boxs .box2 .box1-in .box3-text .box2-p1, .section5 .sec5-in .boxs .box2 .box1-in .box3-text .box3-p1, .section5 .sec5-in .boxs .box2 .box2-in .box1-text .box1-p1, .section5 .sec5-in .boxs .box2 .box2-in .box1-text .box2-p1, .section5 .sec5-in .boxs .box2 .box2-in .box1-text .box3-p1, .section5 .sec5-in .boxs .box2 .box2-in .box2-text .box1-p1, .section5 .sec5-in .boxs .box2 .box2-in .box2-text .box2-p1, .section5 .sec5-in .boxs .box2 .box2-in .box2-text .box3-p1, .section5 .sec5-in .boxs .box2 .box2-in .box3-text .box1-p1, .section5 .sec5-in .boxs .box2 .box2-in .box3-text .box2-p1, .section5 .sec5-in .boxs .box2 .box2-in .box3-text .box3-p1, .section5 .sec5-in .boxs .box2 .box3-in .box1-text .box1-p1, .section5 .sec5-in .boxs .box2 .box3-in .box1-text .box2-p1, .section5 .sec5-in .boxs .box2 .box3-in .box1-text .box3-p1, .section5 .sec5-in .boxs .box2 .box3-in .box2-text .box1-p1, .section5 .sec5-in .boxs .box2 .box3-in .box2-text .box2-p1, .section5 .sec5-in .boxs .box2 .box3-in .box2-text .box3-p1, .section5 .sec5-in .boxs .box2 .box3-in .box3-text .box1-p1, .section5 .sec5-in .boxs .box2 .box3-in .box3-text .box2-p1, .section5 .sec5-in .boxs .box2 .box3-in .box3-text .box3-p1, .section5 .sec5-in .boxs .box3 .box1-in .box1-text .box1-p1, .section5 .sec5-in .boxs .box3 .box1-in .box1-text .box2-p1, .section5 .sec5-in .boxs .box3 .box1-in .box1-text .box3-p1, .section5 .sec5-in .boxs .box3 .box1-in .box2-text .box1-p1, .section5 .sec5-in .boxs .box3 .box1-in .box2-text .box2-p1, .section5 .sec5-in .boxs .box3 .box1-in .box2-text .box3-p1, .section5 .sec5-in .boxs .box3 .box1-in .box3-text .box1-p1, .section5 .sec5-in .boxs .box3 .box1-in .box3-text .box2-p1, .section5 .sec5-in .boxs .box3 .box1-in .box3-text .box3-p1, .section5 .sec5-in .boxs .box3 .box2-in .box1-text .box1-p1, .section5 .sec5-in .boxs .box3 .box2-in .box1-text .box2-p1, .section5 .sec5-in .boxs .box3 .box2-in .box1-text .box3-p1, .section5 .sec5-in .boxs .box3 .box2-in .box2-text .box1-p1, .section5 .sec5-in .boxs .box3 .box2-in .box2-text .box2-p1, .section5 .sec5-in .boxs .box3 .box2-in .box2-text .box3-p1, .section5 .sec5-in .boxs .box3 .box2-in .box3-text .box1-p1, .section5 .sec5-in .boxs .box3 .box2-in .box3-text .box2-p1, .section5 .sec5-in .boxs .box3 .box2-in .box3-text .box3-p1, .section5 .sec5-in .boxs .box3 .box3-in .box1-text .box1-p1, .section5 .sec5-in .boxs .box3 .box3-in .box1-text .box2-p1, .section5 .sec5-in .boxs .box3 .box3-in .box1-text .box3-p1, .section5 .sec5-in .boxs .box3 .box3-in .box2-text .box1-p1, .section5 .sec5-in .boxs .box3 .box3-in .box2-text .box2-p1, .section5 .sec5-in .boxs .box3 .box3-in .box2-text .box3-p1, .section5 .sec5-in .boxs .box3 .box3-in .box3-text .box1-p1, .section5 .sec5-in .boxs .box3 .box3-in .box3-text .box2-p1, .section5 .sec5-in .boxs .box3 .box3-in .box3-text .box3-p1 {
+  color: rgb(136, 136, 136);
+  margin-top: 5px;
+}
+.section5 .sec5-in .boxs .box1 .box1-p2, .section5 .sec5-in .boxs .box1 .box2-p2, .section5 .sec5-in .boxs .box1 .box3-p2, .section5 .sec5-in .boxs .box2 .box1-p2, .section5 .sec5-in .boxs .box2 .box2-p2, .section5 .sec5-in .boxs .box2 .box3-p2, .section5 .sec5-in .boxs .box3 .box1-p2, .section5 .sec5-in .boxs .box3 .box2-p2, .section5 .sec5-in .boxs .box3 .box3-p2 {
+  margin-top: 2.5rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  line-height: 25px;
+  color: rgb(136, 136, 136);
+}
+.section5 .sec5-in .cricles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 3rem;
+}
+.section5 .sec5-in .cricles .cricle1, .section5 .sec5-in .cricles .cricle2, .section5 .sec5-in .cricles .cricle3, .section5 .sec5-in .cricles .cricle4 {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background-color: rgb(250, 224, 198);
+  cursor: pointer;
+}
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .navbar nav ul,
   .navbar nav button {

@@ -459,6 +459,91 @@ $MontsFont: 'Montserrat', sans-serif;
     }
 }
 
+// Section 5
+.section5 {
+    width: 100%;
+    padding: 0 100px;
+
+    .sec5-head {
+        text-align: center;
+        margin-top: 5rem;
+
+        h1 {
+            font-size: 45px;
+            margin-top: 1rem;
+        }
+    }
+
+    .sec5-in {
+        .boxs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            margin-top: 3rem;
+
+            .box1,
+            .box2,
+            .box3 {
+                width: 30%;
+                height: 250px;
+                background-color: rgb(251, 247, 243);
+                border: none;
+                border-radius: 5px;
+
+                &:hover{
+                    background-color: linen;
+                    transition: .1s;
+                }
+            }
+
+            .box1, .box2, .box3 {
+                .box1-in, .box2-in, .box3-in {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 2rem;
+                    position: relative;
+
+                    img{
+                        position: absolute;
+                        left: 1rem;
+                    }
+                    
+                    .box1-text, .box2-text, .box3-text{
+                        margin-left: -3rem;
+                        .box1-p1, .box2-p1, .box3-p1{
+                            color: $textColor;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+                .box1-p2, .box2-p2, .box3-p2{
+                    margin-top: 2.5rem;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                    line-height: 25px;
+                    color: $textColor;
+                }
+            }
+        }
+        .cricles{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 3rem;
+            .cricle1, .cricle2, .cricle3, .cricle4{
+                width: 10px;
+                height: 10px;
+                border-radius: 9999px;
+                background-color: rgb(250, 224, 198);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
 
 
 

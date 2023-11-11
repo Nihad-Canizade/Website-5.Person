@@ -824,26 +824,6 @@
   align-items: center;
   flex-direction: column;
 }
-.section8 .cards .card1 img,
-.section8 .cards .card2 img,
-.section8 .cards .card3 img {
-  position: relative;
-}
-.section8 .cards .card1 img::after,
-.section8 .cards .card2 img::after,
-.section8 .cards .card3 img::after {
-  content: "";
-  position: absolute;
-  background-color: rgba(5, 5, 5, 0.5);
-  height: 100%;
-  width: 0;
-  transition: 0.3s;
-}
-.section8 .cards .card1 img:hover::after,
-.section8 .cards .card2 img:hover::after,
-.section8 .cards .card3 img:hover::after {
-  width: 100%;
-}
 .section8 .cards .card1 p,
 .section8 .cards .card2 p,
 .section8 .cards .card3 p {
@@ -862,7 +842,8 @@
   color: rgb(255, 98, 0);
   transition: 0.3s;
 }
-.section8 .cards .card1 span, .section8 .cards .card1 i,
+.section8 .cards .card1 span,
+.section8 .cards .card1 i,
 .section8 .cards .card2 span,
 .section8 .cards .card2 i,
 .section8 .cards .card3 span,
@@ -875,6 +856,206 @@
 .section8 .cards .card2 i,
 .section8 .cards .card3 i {
   margin-left: 5px;
+}
+
+.section9 {
+  width: 100%;
+  padding: 0 100px;
+}
+.section9 .sec9-head {
+  text-align: center;
+  margin-top: 5rem;
+}
+.section9 .sec9-head h1 {
+  font-size: 45px;
+  margin-top: 1rem;
+}
+.section9 .sec9-in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section9 .sec9-in .forinput {
+  margin-top: 3rem;
+}
+.section9 .sec9-in .forinput input {
+  padding-top: 25px;
+  padding-right: 200px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  border: 1px solid rgb(255, 206, 114);
+  border-radius: 7px;
+}
+.section9 .sec9-in .textarea {
+  margin-top: 2rem;
+}
+.section9 .sec9-in .textarea textarea {
+  padding-top: 25px;
+  padding-right: 545px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  border: 1px solid rgb(255, 206, 114);
+  border-radius: 7px;
+}
+.section9 .sec9-in .foradrs .adrs1,
+.section9 .sec9-in .foradrs .adrs2,
+.section9 .sec9-in .foradrs .adrs3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.section9 .sec9-in .foradrs .adrs1 .fori i,
+.section9 .sec9-in .foradrs .adrs2 .fori i,
+.section9 .sec9-in .foradrs .adrs3 .fori i {
+  font-size: 25px;
+  padding: 12px;
+  background-color: rgb(249, 209, 170);
+  border-radius: 5px;
+  margin-right: 1rem;
+  color: rgb(255, 98, 0);
+}
+.section9 .sec9-in .foradrs .adrs1 .foratext p,
+.section9 .sec9-in .foradrs .adrs2 .foratext p,
+.section9 .sec9-in .foradrs .adrs3 .foratext p {
+  color: rgb(136, 136, 136);
+}
+.section9 .sec9-in .foradrs .adrs1 .foratext p:hover,
+.section9 .sec9-in .foradrs .adrs2 .foratext p:hover,
+.section9 .sec9-in .foradrs .adrs3 .foratext p:hover {
+  color: rgb(255, 98, 0);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.section9 button {
+  font-size: 20px;
+  padding: 15px 30px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(255, 98, 0);
+  font-weight: bold;
+  margin-top: 3rem;
+}
+.section9 button:hover {
+  background-color: black;
+  color: rgb(255, 98, 0);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  padding: 30px 100px;
+  background-color: black;
+  margin-top: 5rem;
+}
+footer .footer-in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-in .ftr1 p {
+  color: white;
+  font-size: 15px;
+  line-height: 25px;
+}
+footer .footer-in .ftr1 h2 {
+  margin-top: 2rem;
+  color: white;
+}
+footer .footer-in .ftr2 h2 {
+  color: white;
+}
+footer .footer-in .ftr2 ul li {
+  margin-top: 1.2rem;
+}
+footer .footer-in .ftr2 ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer-in .ftr2 ul li a:hover {
+  color: rgb(255, 98, 0);
+  transition: 0.3s;
+}
+footer .footer-in .ftr3 h2 {
+  color: white;
+}
+footer .footer-in .ftr3 ul li {
+  margin-top: 1.2rem;
+}
+footer .footer-in .ftr3 ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer-in .ftr3 ul li a:hover {
+  color: rgb(255, 98, 0);
+  transition: 0.3s;
+}
+footer .footer-in .ftr4 h2 {
+  color: white;
+}
+footer .footer-in .ftr4 .forficon {
+  margin-top: 3rem;
+}
+footer .footer-in .ftr4 .forficon i {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgb(255, 98, 0);
+  border-radius: 8px;
+  margin-right: 10px;
+}
+footer .footer-in .ftr4 .forficon i:hover {
+  background-color: white;
+  color: rgb(255, 98, 0);
+  transition: 0.3s;
+  cursor: pointer;
+}
+footer .footer-in .ftr4 .fora1 {
+  margin-top: 2rem;
+}
+footer .footer-in .ftr4 .fora1 i {
+  color: rgb(255, 98, 0);
+  font-size: 15px;
+}
+footer .footer-in .ftr4 .fora1 span {
+  color: white;
+}
+footer .footer-in .ftr4 .fora2 {
+  margin-top: 2rem;
+}
+footer .footer-in .ftr4 .fora2 i {
+  color: rgb(255, 98, 0);
+  font-size: 15px;
+}
+footer .footer-in .ftr4 .fora2 span {
+  color: white;
+}
+footer .footerend {
+  margin-top: 15rem;
+}
+footer .footerend .footer-in {
+  margin-top: 3rem;
+}
+footer .footerend .footer-in .textl p {
+  color: white;
+}
+footer .footerend .footer-in .textr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+footer .footerend .footer-in .textr p {
+  color: white;
+}
+footer .footerend .footer-in .textr p:hover {
+  color: rgb(255, 98, 0);
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {

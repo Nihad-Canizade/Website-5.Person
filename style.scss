@@ -791,23 +791,6 @@ $MontsFont: 'Montserrat', sans-serif;
             align-items: center;
             flex-direction: column;
 
-            img{
-                position: relative;
-                
-                &::after {
-                    content: "";
-                    position: absolute;
-                    background-color: rgba(5, 5, 5, 0.5);
-                    height: 100%;
-                    width: 0;
-                    transition: .3s;
-                }
-    
-                &:hover::after {
-                    width: 100%;
-                }
-            }
-
             p {
                 margin-top: 2rem;
                 color: $textColor;
@@ -816,14 +799,15 @@ $MontsFont: 'Montserrat', sans-serif;
             h1 {
                 margin-top: 2rem;
 
-                &:hover{
+                &:hover {
                     cursor: pointer;
                     color: $orgColor;
                     transition: .3s;
                 }
             }
 
-            span, i{
+            span,
+            i {
                 color: $orgColor;
                 font-weight: bold;
                 cursor: pointer;
@@ -831,6 +815,270 @@ $MontsFont: 'Montserrat', sans-serif;
 
             i {
                 margin-left: 5px;
+            }
+        }
+    }
+}
+
+// Section 9
+.section9 {
+    width: 100%;
+    padding: 0 100px;
+
+    .sec9-head {
+        text-align: center;
+        margin-top: 5rem;
+
+        h1 {
+            font-size: 45px;
+            margin-top: 1rem;
+        }
+    }
+
+    .sec9-in {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        // For Input
+        .forinput {
+            margin-top: 3rem;
+
+            input {
+                padding-top: 25px;
+                padding-right: 200px;
+                padding-bottom: 25px;
+                padding-left: 15px;
+                margin-top: 1.5rem;
+                margin-right: 1rem;
+                border: 1px solid rgb(255, 206, 114);
+                border-radius: 7px;
+            }
+        }
+
+        .textarea {
+            margin-top: 2rem;
+
+            textarea {
+                padding-top: 25px;
+                padding-right: 545px;
+                padding-bottom: 25px;
+                padding-left: 15px;
+                border: 1px solid rgb(255, 206, 114);
+                border-radius: 7px;
+            }
+        }
+
+        // Address
+        .foradrs {
+
+            .adrs1,
+            .adrs2,
+            .adrs3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 4rem;
+
+                .fori {
+                    i {
+                        font-size: 25px;
+                        padding: 12px;
+                        background-color: rgb(249, 209, 170);
+                        border-radius: 5px;
+                        margin-right: 1rem;
+                        color: $orgColor;
+                    }
+                }
+
+                .foratext {
+                    p {
+                        color: $textColor;
+
+                        &:hover {
+                            color: $orgColor;
+                            transition: .3s;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Button
+    button {
+        font-size: 20px;
+        padding: 15px 30px;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        background-color: $orgColor;
+        font-weight: bold;
+        margin-top: 3rem;
+
+        &:hover {
+            background-color: black;
+            color: $orgColor;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+    }
+}
+
+// Footer
+footer {
+    width: 100%;
+    padding: 30px 100px;
+    background-color: black;
+    margin-top: 5rem;
+
+    .footer-in {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        // Foot 1
+        .ftr1 {
+            p {
+                color: white;
+                font-size: 15px;
+                line-height: 25px;
+            }
+
+            h2 {
+                margin-top: 2rem;
+                color: white;
+            }
+        }
+
+        // Foot 2
+        .ftr2 {
+            h2 {
+                color: white;
+            }
+
+            ul {
+                li {
+                    margin-top: 1.2rem;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: $orgColor;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Foot 3
+        .ftr3 {
+            h2 {
+                color: white;
+            }
+
+            ul {
+                li {
+                    margin-top: 1.2rem;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: $orgColor;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Foot 4
+        .ftr4 {
+            h2 {
+                color: white;
+            }
+
+            .forficon {
+                margin-top: 3rem;
+
+                i {
+                    color: white;
+                    font-size: 20px;
+                    padding: 10px;
+                    background-color: $orgColor;
+                    border-radius: 8px;
+                    margin-right: 10px;
+
+                    &:hover {
+                        background-color: white;
+                        color: $orgColor;
+                        transition: .3s;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .fora1 {
+                margin-top: 2rem;
+
+                i {
+                    color: $orgColor;
+                    font-size: 15px;
+                }
+
+                span {
+                    color: white;
+                }
+            }
+
+            .fora2 {
+                margin-top: 2rem;
+
+                i {
+                    color: $orgColor;
+                    font-size: 15px;
+                }
+
+                span {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    // Footer End
+    .footerend {
+        margin-top: 15rem;
+
+        .footer-in {
+            margin-top: 3rem;
+            .textl {
+                p {
+                    color: white;
+                }
+            }
+
+            .textr {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+
+                p {
+                    color: white;
+
+                    &:hover{
+                        color: $orgColor;
+                        transition: .3s;
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }

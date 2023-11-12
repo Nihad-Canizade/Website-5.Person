@@ -35,12 +35,17 @@ $MontsFont: 'Montserrat', sans-serif;
 }
 
 .navbar {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 32px;
+
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 40px;
         padding-bottom: 40px;
+
 
         ul li {
             list-style: none;
@@ -201,6 +206,8 @@ $MontsFont: 'Montserrat', sans-serif;
         // For Img
         .forimg {
             width: 45%;
+            min-width: 400px;
+            flex-wrap: nowrap;
 
             img {
                 width: 95%;
@@ -518,7 +525,6 @@ $MontsFont: 'Montserrat', sans-serif;
                     .box1-text,
                     .box2-text,
                     .box3-text {
-                        margin-left: -3rem;
 
                         .box1-p1,
                         .box2-p1,
@@ -856,19 +862,6 @@ $MontsFont: 'Montserrat', sans-serif;
             }
         }
 
-        .textarea {
-            margin-top: 2rem;
-
-            textarea {
-                padding-top: 25px;
-                padding-right: 545px;
-                padding-bottom: 25px;
-                padding-left: 15px;
-                border: 1px solid rgb(255, 206, 114);
-                border-radius: 7px;
-            }
-        }
-
         // Address
         .foradrs {
 
@@ -944,6 +937,7 @@ footer {
                 color: white;
                 font-size: 15px;
                 line-height: 25px;
+                margin-top: 1.2rem;
             }
 
             h2 {
@@ -1058,6 +1052,7 @@ footer {
 
         .footer-in {
             margin-top: 3rem;
+
             .textl {
                 p {
                     color: white;
@@ -1073,7 +1068,7 @@ footer {
                 p {
                     color: white;
 
-                    &:hover{
+                    &:hover {
                         color: $orgColor;
                         transition: .3s;
                         cursor: pointer;
@@ -1094,7 +1089,7 @@ footer {
 
 
 // Responsive
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     // Navbar
     .navbar {
@@ -1127,6 +1122,199 @@ footer {
                 width: auto;
                 margin-top: 1rem;
             }
+        }
+    }
+
+    // Section 2
+    .section2 {
+        width: auto;
+
+        .sec2-in {
+            flex-direction: column;
+
+            .fortext {
+                flex-wrap: nowrap;
+                margin-top: 1rem;
+
+                .for-icons {
+                    flex-direction: column;
+                }
+
+                .divss {
+
+                    .divs1,
+                    .divs2 {
+                        flex-direction: column;
+                        margin-top: 1rem;
+                        gap: 20px
+                    }
+                }
+            }
+
+            .forimg {
+                width: auto;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    // Section 3
+    .section3 {
+        width: auto;
+
+        .sec3-in {
+
+            .boxs1,
+            .boxs2 {
+                flex-direction: column;
+                gap: 20px;
+
+                .box1,
+                .box2,
+                .box3,
+                .box4 {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+
+    // Section 4
+    .section4 {
+        width: auto;
+
+        .sec4-in {
+            flex-direction: column;
+
+            .scrollstick {
+                display: none;
+            }
+
+            .fortext {
+                width: 100%;
+
+                .boxs1,
+                .boxs2,
+                .boxs3 {
+                    flex-direction: column;
+                    width: 100%;
+                    height: auto;
+                    gap: 20px;
+
+                    .box1,
+                    .box2,
+                    .box3 {
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // Section 5
+    .section5 {
+        width: auto;
+
+        .sec5-in {
+            .boxs {
+                flex-direction: column;
+
+                .box1,
+                .box2,
+                .box3 {
+                    width: 100%;
+                    height: auto;
+
+                    .box1-in,
+                    .box2-in,
+                    .box3-in {
+                        flex-wrap: nowrap;
+                    }
+                }
+            }
+
+            .cricles {
+                display: none;
+            }
+        }
+    }
+
+    // Section 6
+    .section6 {
+        width: auto;
+
+        .nav {
+            display: none;
+        }
+    }
+
+    // Section 7
+    .section7 {
+        width: auto;
+
+        .boxs {
+            flex-direction: column;
+            gap: 30px;
+
+            .box1,
+            .box2,
+            .box3,
+            .box4,
+            .box5,
+            .box6 {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .ovals {
+            display: none;
+        }
+    }
+
+    // Section 8
+    .section8 {
+        .cards {
+            flex-direction: column;
+            gap: 50px;
+
+            .card1,
+            .card2,
+            .card3 {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    // Section 9
+    .section9 {
+        width: auto;
+
+        .sec9-in {
+            flex-direction: column;
+
+            .forinput {
+                flex-direction: column;
+            }
+
+
+        }
+    }
+
+    // Footer
+    footer{
+        width: auto;
+
+        .footer-in{
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .footerend{
+            display: none;
         }
     }
 }

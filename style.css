@@ -24,6 +24,11 @@
   padding: 0 32px;
 }
 
+.navbar {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 32px;
+}
 .navbar nav {
   display: flex;
   justify-content: space-between;
@@ -171,6 +176,8 @@
 }
 .section2 .sec2-in .forimg {
   width: 45%;
+  min-width: 400px;
+  flex-wrap: nowrap;
 }
 .section2 .sec2-in .forimg img {
   width: 95%;
@@ -463,35 +470,6 @@
 .section5 .sec5-in .boxs .box3 .box3-in img {
   position: absolute;
   left: 1rem;
-}
-.section5 .sec5-in .boxs .box1 .box1-in .box1-text,
-.section5 .sec5-in .boxs .box1 .box1-in .box2-text,
-.section5 .sec5-in .boxs .box1 .box1-in .box3-text,
-.section5 .sec5-in .boxs .box1 .box2-in .box1-text,
-.section5 .sec5-in .boxs .box1 .box2-in .box2-text,
-.section5 .sec5-in .boxs .box1 .box2-in .box3-text,
-.section5 .sec5-in .boxs .box1 .box3-in .box1-text,
-.section5 .sec5-in .boxs .box1 .box3-in .box2-text,
-.section5 .sec5-in .boxs .box1 .box3-in .box3-text,
-.section5 .sec5-in .boxs .box2 .box1-in .box1-text,
-.section5 .sec5-in .boxs .box2 .box1-in .box2-text,
-.section5 .sec5-in .boxs .box2 .box1-in .box3-text,
-.section5 .sec5-in .boxs .box2 .box2-in .box1-text,
-.section5 .sec5-in .boxs .box2 .box2-in .box2-text,
-.section5 .sec5-in .boxs .box2 .box2-in .box3-text,
-.section5 .sec5-in .boxs .box2 .box3-in .box1-text,
-.section5 .sec5-in .boxs .box2 .box3-in .box2-text,
-.section5 .sec5-in .boxs .box2 .box3-in .box3-text,
-.section5 .sec5-in .boxs .box3 .box1-in .box1-text,
-.section5 .sec5-in .boxs .box3 .box1-in .box2-text,
-.section5 .sec5-in .boxs .box3 .box1-in .box3-text,
-.section5 .sec5-in .boxs .box3 .box2-in .box1-text,
-.section5 .sec5-in .boxs .box3 .box2-in .box2-text,
-.section5 .sec5-in .boxs .box3 .box2-in .box3-text,
-.section5 .sec5-in .boxs .box3 .box3-in .box1-text,
-.section5 .sec5-in .boxs .box3 .box3-in .box2-text,
-.section5 .sec5-in .boxs .box3 .box3-in .box3-text {
-  margin-left: -3rem;
 }
 .section5 .sec5-in .boxs .box1 .box1-in .box1-text .box1-p1,
 .section5 .sec5-in .boxs .box1 .box1-in .box1-text .box2-p1,
@@ -888,17 +866,6 @@
   border: 1px solid rgb(255, 206, 114);
   border-radius: 7px;
 }
-.section9 .sec9-in .textarea {
-  margin-top: 2rem;
-}
-.section9 .sec9-in .textarea textarea {
-  padding-top: 25px;
-  padding-right: 545px;
-  padding-bottom: 25px;
-  padding-left: 15px;
-  border: 1px solid rgb(255, 206, 114);
-  border-radius: 7px;
-}
 .section9 .sec9-in .foradrs .adrs1,
 .section9 .sec9-in .foradrs .adrs2,
 .section9 .sec9-in .foradrs .adrs3 {
@@ -961,6 +928,7 @@ footer .footer-in .ftr1 p {
   color: white;
   font-size: 15px;
   line-height: 25px;
+  margin-top: 1.2rem;
 }
 footer .footer-in .ftr1 h2 {
   margin-top: 2rem;
@@ -1058,7 +1026,7 @@ footer .footerend .footer-in .textr p:hover {
   cursor: pointer;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .navbar nav ul,
   .navbar nav button {
     display: none;
@@ -1079,5 +1047,158 @@ footer .footerend .footer-in .textr p:hover {
   .section1 .sec1-in .forimg {
     width: auto;
     margin-top: 1rem;
+  }
+  .section2 {
+    width: auto;
+  }
+  .section2 .sec2-in {
+    flex-direction: column;
+  }
+  .section2 .sec2-in .fortext {
+    flex-wrap: nowrap;
+    margin-top: 1rem;
+  }
+  .section2 .sec2-in .fortext .for-icons {
+    flex-direction: column;
+  }
+  .section2 .sec2-in .fortext .divss .divs1,
+  .section2 .sec2-in .fortext .divss .divs2 {
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 20px;
+  }
+  .section2 .sec2-in .forimg {
+    width: auto;
+    margin-top: 1rem;
+  }
+  .section3 {
+    width: auto;
+  }
+  .section3 .sec3-in .boxs1,
+  .section3 .sec3-in .boxs2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section3 .sec3-in .boxs1 .box1,
+  .section3 .sec3-in .boxs1 .box2,
+  .section3 .sec3-in .boxs1 .box3,
+  .section3 .sec3-in .boxs1 .box4,
+  .section3 .sec3-in .boxs2 .box1,
+  .section3 .sec3-in .boxs2 .box2,
+  .section3 .sec3-in .boxs2 .box3,
+  .section3 .sec3-in .boxs2 .box4 {
+    width: 100%;
+  }
+  .section4 {
+    width: auto;
+  }
+  .section4 .sec4-in {
+    flex-direction: column;
+  }
+  .section4 .sec4-in .scrollstick {
+    display: none;
+  }
+  .section4 .sec4-in .fortext {
+    width: 100%;
+  }
+  .section4 .sec4-in .fortext .boxs1,
+  .section4 .sec4-in .fortext .boxs2,
+  .section4 .sec4-in .fortext .boxs3 {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+  }
+  .section4 .sec4-in .fortext .boxs1 .box1,
+  .section4 .sec4-in .fortext .boxs1 .box2,
+  .section4 .sec4-in .fortext .boxs1 .box3,
+  .section4 .sec4-in .fortext .boxs2 .box1,
+  .section4 .sec4-in .fortext .boxs2 .box2,
+  .section4 .sec4-in .fortext .boxs2 .box3,
+  .section4 .sec4-in .fortext .boxs3 .box1,
+  .section4 .sec4-in .fortext .boxs3 .box2,
+  .section4 .sec4-in .fortext .boxs3 .box3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .section5 {
+    width: auto;
+  }
+  .section5 .sec5-in .boxs {
+    flex-direction: column;
+  }
+  .section5 .sec5-in .boxs .box1,
+  .section5 .sec5-in .boxs .box2,
+  .section5 .sec5-in .boxs .box3 {
+    width: 100%;
+    height: auto;
+  }
+  .section5 .sec5-in .boxs .box1 .box1-in,
+  .section5 .sec5-in .boxs .box1 .box2-in,
+  .section5 .sec5-in .boxs .box1 .box3-in,
+  .section5 .sec5-in .boxs .box2 .box1-in,
+  .section5 .sec5-in .boxs .box2 .box2-in,
+  .section5 .sec5-in .boxs .box2 .box3-in,
+  .section5 .sec5-in .boxs .box3 .box1-in,
+  .section5 .sec5-in .boxs .box3 .box2-in,
+  .section5 .sec5-in .boxs .box3 .box3-in {
+    flex-wrap: nowrap;
+  }
+  .section5 .sec5-in .cricles {
+    display: none;
+  }
+  .section6 {
+    width: auto;
+  }
+  .section6 .nav {
+    display: none;
+  }
+  .section7 {
+    width: auto;
+  }
+  .section7 .boxs {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .section7 .boxs .box1,
+  .section7 .boxs .box2,
+  .section7 .boxs .box3,
+  .section7 .boxs .box4,
+  .section7 .boxs .box5,
+  .section7 .boxs .box6 {
+    width: 100%;
+    height: auto;
+  }
+  .section7 .ovals {
+    display: none;
+  }
+  .section8 .cards {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .section8 .cards .card1,
+  .section8 .cards .card2,
+  .section8 .cards .card3 {
+    width: 100%;
+    height: auto;
+  }
+  .section9 {
+    width: auto;
+  }
+  .section9 .sec9-in {
+    flex-direction: column;
+  }
+  .section9 .sec9-in .forinput {
+    flex-direction: column;
+  }
+  footer {
+    width: auto;
+  }
+  footer .footer-in {
+    flex-direction: column;
+    gap: 50px;
+  }
+  footer .footerend {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

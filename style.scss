@@ -849,17 +849,28 @@ $MontsFont: 'Montserrat', sans-serif;
         // For Input
         .forinput {
             margin-top: 3rem;
+            width: 63%;
+            height: 400px;
 
             input {
-                padding-top: 25px;
-                padding-right: 200px;
-                padding-bottom: 25px;
-                padding-left: 15px;
+                width: 45%;
+                height: 70px;
+                padding-left: 1rem;
                 margin-top: 1.5rem;
                 margin-right: 1rem;
                 border: 1px solid rgb(255, 206, 114);
                 border-radius: 7px;
             }
+
+            textarea{
+                width: 93%;
+                padding-top: 2rem;
+                padding-left: 1rem;
+                margin-top: 1.5rem;
+                border: 1px solid rgb(255, 206, 114);
+                border-radius: 7px;
+            }
+            
         }
 
         // Address
@@ -1111,7 +1122,7 @@ footer {
         width: auto;
 
         .sec1-in {
-            flex-direction: column;
+            flex-direction: column-reverse;
 
             .fortext {
                 flex-wrap: nowrap;

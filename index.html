@@ -5,83 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <link rel="icon" href="./Images/nav-logo.png" type="png">
+    <title>Website</title>
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <div class="navbar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-            <nav>
-                <img src="https://credesign.vercel.app/multiPage/img/Logo.png" alt="Images-logo"
-                    style="cursor: pointer;">
-                <ul>
-                    <li><a href="#">Home</a>
-
-                        <!-- Drop Down 1 -->
-                        <div class="dd1">
-                            <ul>
-                                <li><a href="#2">Home 1</a></li>
-                                <li><a href="#2">Home 2</a></li>
-                                <li><a href="#2">Home 3</a></li>
-                                <li><a href="#2">Home 4</a></li>
-                            </ul>
-                        </div>
+            <a class="navbar-brand" href="#">
+                <img src="./Images/nav-logo.png" alt="Nav-Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li><a href="#">About</a></li>
-
-                    <!-- Drop Down 2 -->
-                    <li><a href="#">Services</a>
-                        <div class="dd2">
-                            <ul>
-                                <li><a href="#3">Style 1</a></li>
-                                <li><a href="#3">Style 2</a></li>
-                                <li><a href="#3">Services Details</a></li>
-                            </ul>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
                     </li>
-                    <li><a href="#">Resume</a></li>
-
-                    <!-- Drop Down 3 -->
-                    <li><a href="#">Portfolio</a>
-                        <div class="dd3">
-                            <ul>
-                                <li><a href="#4">Style 1</a></li>
-                                <li><a href="#4">Style 1 Full Width</a></li>
-                                <li><a href="#4">Style 2</a></li>
-                                <li><a href="#4">Style 2 Full Width</a></li>
-                                <li><a href="#4">Style 3</a></li>
-                                <li><a href="#4">Style 3 Full Width</a></li>
-                                <li><a href="#4">Portfolio Details</a></li>
-                            </ul>
-                        </div>
+                    <!-- Dropdown 1 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Style 1</a></li>
+                            <li><a class="dropdown-item" href="#">Style 2</a></li>
+                            <li><a class="dropdown-item" href="#">Services Details</a></li>
+                        </ul>
                     </li>
-
-                    <!-- Drop Down 4 -->
-                    <li><a href="#">Blog</a>
-                        <div class="dd4">
-                            <ul>
-                                <li><a href="#4">Style 1</a></li>
-                                <li><a href="#4">Style 1 Full Width</a></li>
-                                <li><a href="#4">Style 2</a></li>
-                                <li><a href="#4">Style 2 Full Width</a></li>
-                                <li><a href="#4">Style 3</a></li>
-                                <li><a href="#4">Style 3 Full Width</a></li>
-                                <li><a href="#4">Blog Details</a></li>
-                            </ul>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resume</a>
+                    </li>
+                    <!-- Dropdown 2 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Style 1</a></li>
+                            <li><a class="dropdown-item" href="#">Style 1 Full Width</a></li>
+                            <li><a class="dropdown-item" href="#">Style 2</a></li>
+                            <li><a class="dropdown-item" href="#">Style 2 Full Width</a></li>
+                            <li><a class="dropdown-item" href="#">Style 3</a></li>
+                            <li><a class="dropdown-item" href="#">Style 3 Full Width</a></li>
+                            <li><a class="dropdown-item" href="#">Portfolio Details</a></li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown 3 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Style 1</a></li>
+                            <li><a class="dropdown-item" href="#">Style 1 Full Width</a></li>
+                            <li><a class="dropdown-item" href="#">Style 2</a></li>
+                            <li><a class="dropdown-item" href="#">Style 2 Full Width</a></li>
+                            <li><a class="dropdown-item" href="#">Style 3</a></li>
+                            <li><a class="dropdown-item" href="#">Style 3 Full Width</a></li>
+                            <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                        </ul>
                     </li>
                 </ul>
-                <button>Contact Us</button>
-                <i class="bi bi-border-width"></i>
-            </nav>
+            </div>
+            <button class="nav-btn">Contact Us</button>
         </div>
-    </div>
+    </nav>
+
 
     <!-- Section 1 -->
     <section class="section1">
@@ -90,8 +96,8 @@
 
                 <!-- For Text -->
                 <div class="fortext">
-                    <img src="https://credesign.vercel.app/multiPage/img/orangeDot.png" alt="Icon-cricle">
-                    <span style="margin: 0 0 0 10px;">I AM DESIGNER</span>
+                    <img src="./Images/point-img.png" alt="Icon-cricle">
+                    <p class="sec1-p1">I AM DESIGNER</p>
                     <h1>Creative Design</h1>
                     <h1>and Web <span style="color: rgb(255, 98, 0)">Solutions</span></h1>
                     <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
@@ -105,11 +111,12 @@
 
                 <!-- For Img -->
                 <div class="forimg">
-                    <img src="https://credesign.vercel.app/multiPage/img/bannerImg.png" alt="Image">
+                    <img src="./Images/s1-img.png" alt="Image">
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Section 2 -->
     <section class="section2">
@@ -118,15 +125,14 @@
 
                 <!-- For Img -->
                 <div class="forimg">
-                    <img src="https://credesign.vercel.app/multiPage/img/about.png" alt="Image">
+                    <img src="./Images/s2-img.png" alt="Image">
                 </div>
 
                 <!-- For Text -->
                 <div class="fortext">
-                    <img src="https://credesign.vercel.app/multiPage/img/orangeDot.png" alt="Icon-cricle">
+                    <img src="./Images/point-img.png" alt="Icon-cricle">
                     <span style="margin: 0 0 0 10px;">About Me</span><br><br>
-                    <h1>I Can Design Anything You</h1>
-                    <h1>Want</h1>
+                    <h1>I Can Design Anything You Want</h1>
                     <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id <br>
                         quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor <br>
                         repellendus. Temporibus autem quibusdam et aut officiis. Nam libero tempore, cum soluta <br>
@@ -135,14 +141,22 @@
                     <!-- For Icons/Images -->
                     <div class="for-icons">
                         <div class="foricon1">
-                            <img src="https://credesign.vercel.app/multiPage/img/aboutIconOne.png" alt="Icon/Image">
-                            <span class="span-zero">0+</span>
-                            <span class="span-nozero">Complete Project</span>
+                            <div class="img">
+                                <img src="./Images/s2-icon1.png" alt="Icon/Image">
+                            </div>
+                            <div class="text">
+                                <span class="span-zero">0+</span>
+                                <span class="span-nozero">Complete Project</span>
+                            </div>
                         </div>
                         <div class="foricon2">
-                            <img src="https://credesign.vercel.app/multiPage/img/aboutIconTwo.png" alt="Icon/Image">
-                            <span class="span-zero">0+</span>
-                            <span class="span-nozero">Year of experience</span>
+                            <div class="img">
+                                <img src="./Images/s2-icon2.png" alt="Icon/Image">
+                            </div>
+                            <div class="text">
+                                <span class="span-zero">0+</span>
+                                <span class="span-nozero">Year of experience</span>
+                            </div>
                         </div>
                     </div>
 
@@ -178,72 +192,76 @@
         </div>
     </section>
 
+
     <!-- Section 3 -->
     <section class="section3">
         <div class="container">
             <div class="sec3-head">
-                <img src="https://credesign.vercel.app/multiPage/img/orangeDot.png" alt="Icon-cricle">
+                <img src="./Images/point-img.png" alt="Icon-cricle">
                 <span style="margin: 0 0 0 10px;">My Service</span>
                 <h1>SERVICES I OFFER</h1>
             </div>
             <div class="sec3-in">
-                <!-- Boxs 1 -->
-                <div class="boxs1">
-                    <div class="box1">
-                        <img src="https://credesign.vercel.app/multiPage/img/serviceOne.png" alt="Images">
+                <div class="boxs">
+                    <!-- Box 1 -->
+                    <div class="box">
+                        <img src="./Images/s3-box1-img.png" alt="Images">
                         <h1>UI/UX Design</h1>
                         <p>Hen our power of choice is <br>
                             untrammelled and when nothing <br>
                             prevents our being able</p>
                     </div>
-                    <div class="box2">
-                        <img src="https://credesign.vercel.app/multiPage/img/serviceTwo.png" alt="Images">
+                    <!-- Box 2 -->
+                    <div class="box">
+                        <img src="./Images/s3-box2-img.png" alt="Images">
                         <h1>Mobile App</h1>
                         <p>Hen our power of choice is <br>
                             untrammelled and when nothing <br>
                             prevents our being able</p>
                     </div>
-                    <div class="box3">
-                        <img src="https://credesign.vercel.app/multiPage/img/serviceThree.png" alt="Images">
+                    <!-- Box 3 -->
+                    <div class="box">
+                        <img src="./Images/s3-box3-img.png" alt="Images">
                         <h1>Graphic Design</h1>
                         <p>Hen our power of choice is <br>
                             untrammelled and when nothing <br>
                             prevents our being able</p>
                     </div>
-                    <div class="box4">
-                        <img src="https://credesign.vercel.app/multiPage/img/serviceFour.png" alt="Images">
+                    <!-- Box 4 -->
+                    <div class="box">
+                        <img src="./Images/s3-box4-img.png" alt="Images">
                         <h1>Web Developer</h1>
                         <p>Hen our power of choice is <br>
                             untrammelled and when nothing <br>
                             prevents our being able</p>
                     </div>
-                </div>
-
-                <!-- Boxs 2 -->
-                <div class="boxs2">
-                    <div class="box1">
-                        <img src="https://credesign.vercel.app/multiPage/img/serviceFive.png" alt="Images">
+                    <!-- Box 5 -->
+                    <div class="box">
+                        <img src="./Images/s3-box5-img.png" alt="Images">
                         <h1>SEO Optimisation</h1>
                         <p>Hen our power of choice is <br>
                             untrammelled and when nothing <br>
                             prevents our being able</p>
                     </div>
-                    <div class="box2">
-                        <img src="https://credesign.vercel.app/multiPage/img/serviceSix.png" alt="Images">
+                    <!-- Box 6 -->
+                    <div class="box">
+                        <img src="./Images/s3-box6-img.png" alt="Images">
                         <h1>WordPress Developer</h1>
                         <p>Hen our power of choice is <br>
                             untrammelled and when nothing <br>
                             prevents our being able</p>
                     </div>
-                    <div class="box3">
-                        <img src="https://credesign.vercel.app/multiPage/img/serviceSeven.png" alt="Images">
+                    <!-- Box 7 -->
+                    <div class="box">
+                        <img src="./Images/s3-box7-img.png" alt="Images">
                         <h1>App Development</h1>
                         <p>Hen our power of choice is <br>
                             untrammelled and when nothing <br>
                             prevents our being able</p>
                     </div>
-                    <div class="box4">
-                        <img src="https://credesign.vercel.app/multiPage/img/serviceEight.png" alt="Images">
+                    <!-- Box 8 -->
+                    <div class="box">
+                        <img src="./Images/s3-box8-img.png" alt="Images">
                         <h1>Business Strategy</h1>
                         <p>Hen our power of choice is <br>
                             untrammelled and when nothing <br>
@@ -255,12 +273,12 @@
         </div>
     </section>
 
+
     <!-- Section 4 -->
     <section class="section4">
         <div class="container">
-            <br><br><br><br><br><br>
             <div class="sec4-head">
-                <img src="https://credesign.vercel.app/multiPage/img/orangeDot.png" alt="Icon-cricle">
+                <img src="./Images/point-img.png" alt="Icon-cricle">
                 <span style="margin: 0 0 0 10px;">My Resume</span>
                 <h1>10+ YEARS OF EXPERIENCE</h1>
             </div>
@@ -365,14 +383,14 @@
                     </div>
                 </div>
             </div>
-            <br><br><br><br>
     </section>
+
 
     <!-- Section 5 -->
     <section class="section5">
         <div class="container">
             <div class="sec5-head">
-                <img src="https://credesign.vercel.app/multiPage/img/orangeDot.png" alt="Icon-cricle">
+                <img src="./Images/point-img.png" alt="Icon-cricle">
                 <span style="margin: 0 0 0 10px;">Testimonial</span>
                 <h1>CLIENT FEEDBACK</h1>
             </div>
@@ -382,8 +400,7 @@
                     <!-- Box 1 -->
                     <div class="box1">
                         <div class="box1-in">
-                            <img src="https://credesign.vercel.app/multiPage/img/testimonialThree.png"
-                                alt="Image/person">
+                            <img src="./Images/s5-person1.png" alt="Image/person">
                             <div class="box1-text">
                                 <h3>Robert E. Wolf</h3>
                                 <p class="box1-p1">Director, Techso</p>
@@ -397,7 +414,7 @@
                     <!-- Box 2 -->
                     <div class="box2">
                         <div class="box2-in">
-                            <img src="https://credesign.vercel.app/multiPage/img/testimonialOne.png" alt="Image/person">
+                            <img src="./Images/s5-person2.png" alt="Image/person">
                             <div class="box2-text">
                                 <h3>John K. Meraz</h3>
                                 <p class="box2-p1">CTO, Xyz Group</p>
@@ -411,7 +428,7 @@
                     <!-- Box 3 -->
                     <div class="box3">
                         <div class="box3-in">
-                            <img src="https://credesign.vercel.app/multiPage/img/testimonialTwo.png" alt="Image/person">
+                            <img src="./Images/s5-person3.png" alt="Image/person">
                             <div class="box3-text">
                                 <h3>Johan Smith</h3>
                                 <p class="box3-p1">CEO, Abc Agency</p>
@@ -425,20 +442,21 @@
 
                 <!-- Cricles -->
                 <div class="cricles">
-                    <div class="cricle1"></div>
-                    <div class="cricle2"></div>
-                    <div class="cricle3"></div>
-                    <div class="cricle4"></div>
+                    <div class="cricle" style="background-color: #FF6B00;"></div>
+                    <div class="cricle"></div>
+                    <div class="cricle"></div>
+                    <div class="cricle"></div>
                 </div>
             </div>
         </div>
     </section>
 
+
     <!-- Section 6 -->
     <section class="section6">
         <div class="container">
             <div class="sec6-head">
-                <img src="https://credesign.vercel.app/multiPage/img/orangeDot.png" alt="Icon-cricle">
+                <img src="./Images/point-img.png" alt="Icon-cricle">
                 <span style="margin: 0 0 0 10px;">My Portfolio</span>
                 <h1>VISIT MY PORTFOLIO</h1>
             </div>
@@ -468,34 +486,35 @@
         </div>
     </section>
 
+
     <!-- Section 7 -->
     <section class="section7">
         <div class="container">
             <div class="sec7-head">
-                <img src="https://credesign.vercel.app/multiPage/img/orangeDot.png" alt="Icon-cricle">
+                <img src="./Images/point-img.png" alt="Icon-cricle">
                 <span style="margin: 0 0 0 10px;">Partners</span>
                 <h1>REPUTED PARTNER</h1>
             </div>
 
             <!-- Boxs -->
             <div class="boxs">
-                <div class="box1">
-                    <img src="https://credesign.vercel.app/multiPage/img/partnerTwo.png" alt="Image">
+                <div class="box">
+                    <img src="./Images/s7-partner1.png" alt="Image">
                 </div>
-                <div class="box2">
-                    <img src="https://credesign.vercel.app/multiPage/img/partnerOne.png" alt="Image">
+                <div class="box">
+                    <img src="./Images/s7-partner2.png" alt="Image">
                 </div>
-                <div class="box3">
-                    <img src="https://credesign.vercel.app/multiPage/img/partnerThree.png" alt="Image">
+                <div class="box">
+                    <img src="./Images/s7-partner3.png" alt="Image">
                 </div>
-                <div class="box4">
-                    <img src="https://credesign.vercel.app/multiPage/img/partnerFour.png" alt="Image">
+                <div class="box">
+                    <img src="./Images/s7-partner4.png" alt="Image">
                 </div>
-                <div class="box5">
-                    <img src="https://credesign.vercel.app/multiPage/img/partnerFive.png" alt="Image">
+                <div class="box">
+                    <img src="./Images/s7-partner5.png" alt="Image">
                 </div>
-                <div class="box6">
-                    <img src="https://credesign.vercel.app/multiPage/img/partnerThree.png" alt="Image">
+                <div class="box">
+                    <img src="./Images/s7-partner3.png" alt="Image">
                 </div>
             </div>
 
@@ -512,11 +531,12 @@
         </div>
     </section>
 
+
     <!-- Section 8 -->
     <section class="section8">
         <div class="container">
             <div class="sec8-head">
-                <img src="https://credesign.vercel.app/multiPage/img/orangeDot.png" alt="Icon-cricle">
+                <img src="./Images/point-img.png" alt="Icon-cricle">
                 <span style="margin: 0 0 0 10px;">My Blog</span>
                 <h1>LATEST BLOG</h1>
             </div>
@@ -525,9 +545,8 @@
             <div class="cards">
 
                 <!-- Card 1 -->
-                <div class="card1">
-                    <img src="https://credesign.vercel.app/multiPage/img/blogOne.png" alt="Image"
-                        style="height: 55%; width: 100%;">
+                <div class="card">
+                    <div class="forimg1 img"></div>
                     <div class="fortext">
                         <p>20 January, 2023</p>
                         <h1>Become a UX/UI Designer With <br>
@@ -538,9 +557,8 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="card2">
-                    <img src="https://credesign.vercel.app/multiPage/img/blogTwo.png" alt="Image"
-                        style="height: 55%; width: 100%;">
+                <div class="card">
+                    <div class="forimg2 img"></div>
                     <div class="fortext">
                         <p>15 January, 2023</p>
                         <h1>The Best App Development For <br>
@@ -551,9 +569,8 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="card3">
-                    <img src="https://credesign.vercel.app/multiPage/img/blogThree.png" alt="Image"
-                        style="height: 55%; width: 100%;">
+                <div class="card card3">
+                    <div class="forimg3 img"></div>
                     <div class="fortext">
                         <p>08 January, 2023</p>
                         <h1>The Best Portfolio For Agency<br>
@@ -566,11 +583,12 @@
         </div>
     </section>
 
+
     <!-- Section 9 -->
     <section class="section9">
         <div class="container">
             <div class="sec9-head">
-                <img src="https://credesign.vercel.app/multiPage/img/orangeDot.png" alt="Icon-cricle">
+                <img src="./Images/point-img.png" alt="Icon-cricle">
                 <span style="margin: 0 0 0 10px;">My Contact</span>
                 <h1>I WANT TO HEAR FROM YOU</h1>
             </div>
@@ -631,6 +649,7 @@
         </div>
     </section>
 
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -638,7 +657,7 @@
 
                 <!-- Foot 1 -->
                 <div class="ftr1">
-                    <img src="https://credesign.vercel.app/multiPage/img/LogoWhite.png" alt="Image/footer/logo">
+                    <img src="./Images/footer-logo.png" alt="Image/footer/logo">
                     <p>At vero eos et accusamus et iusto odio dign <br>
                         ducimus qui blanditiis praesentium volup <br>
                         deleniti atque corrupti quos dolores et <br>
@@ -692,8 +711,8 @@
 
         <!-- Footer End -->
         <div class="footerend">
+            <hr class="footer-hr">
             <div class="container">
-                <hr>
                 <div class="footer-in">
                     <div class="textl">
                         <p>All rights reserved © 2023 Credesign</p>
@@ -707,6 +726,15 @@
         </div>
     </footer>
 
+
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
